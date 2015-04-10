@@ -1,4 +1,4 @@
-EXEC = challenge
+EXEC = mandelbrot
 INCDIR = include/
 BUILDDIR = build/
 SRCDIR = src/
