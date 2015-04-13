@@ -1,3 +1,6 @@
+#ifndef MATRIX_HPP
+#define MATRIX_HPP
+
 #include <vector>
 #include <iostream>
 
@@ -53,3 +56,5 @@ std::ostream & operator<< (std::ostream & os, const Matrix<T> & mat ){
 
 	return os;
 }
+
+#endif
