@@ -1,4 +1,6 @@
 #include "Matrix.hpp"
+#include "Palette.hpp"
+#include "Fractal.hpp"
 #include <iostream>
 #include <complex>
 
@@ -51,6 +53,14 @@ int main () {
 	}
 	
 	std::cout << Iteraz;
+	
+	Color color1(0,0,0);
+	Color color2(1,0.5,1);
+	Linear_grad lg(color1,color2);
+	Palette pal(lg, 128);
+	std::cout << "Intensita': " << pal(0.9,1) << std::endl;
+	
+	fractal::create_coordinates_matrix(0,5,5,10);
 	
 return 0;
 }
